@@ -3,6 +3,11 @@
 // the empty string.
 
 function dnaComplement (dna) {
+  let newDnaString = [];
+  let dnaString = dna.split("");
+  if(dna === "") {
+    return "''";
+  }
 }
 
 console.log(dnaComplement("TAT"));
