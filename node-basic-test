@@ -27,6 +27,7 @@ function dnaComplement (dna) {
         text = "You need to input the nucleotides of the DNA.";
     }
   }
+  return newDnaString.toString();
 }
 
 console.log(dnaComplement("TAT"));
