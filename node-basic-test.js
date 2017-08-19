@@ -1,6 +1,3 @@
-// You have function with one side of the DNA, you need to get the other complementary side.
-// The DNA strand may be empty if there is no DNA at all. In this case, you can simple return
-// the empty string.
 
 function dnaComplement (dna) {
   let newDnaString = [];
@@ -8,7 +5,6 @@ function dnaComplement (dna) {
   if(dna === "") {
     return "''";
   }
-
   for(var i = 0; i < dnaString.length; i++) {
     switch(dnaString[i]) {
       case 'A':
@@ -30,6 +26,7 @@ function dnaComplement (dna) {
   return newDnaString.join("");
 }
 
-console.log(dnaComplement("ATTGC"));
+module.exports = dnaComplement;
+
 
 
